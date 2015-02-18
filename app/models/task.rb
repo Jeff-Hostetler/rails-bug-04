@@ -1,5 +1,6 @@
 class Task < ActiveRecord::Base
 
-  validates_presence_of :description
+  validates :description, presence: true
+  belongs_to :task_list
 
 end
